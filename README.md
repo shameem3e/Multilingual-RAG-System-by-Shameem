@@ -4,9 +4,9 @@ This is a lightweight Retrieval-Augmented Generation (RAG) system that supports 
 ## Setup Guide
 1. Clone this repository:
    
-   git clone https://github.com/your-username/multilingual-rag.git
+   git clone https://github.com/shameem3e/Multilingual-RAG-System-by-Shameem.git
    
-   cd multilingual-rag
+   cd Multilingual-RAG-System-by-Shameem
 
 2. Create a virtual environment (optional but recommended):
    
