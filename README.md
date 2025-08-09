@@ -115,7 +115,8 @@ A: Yes, the results are mostly relevant. However, improvements could include bet
 
 ## 👨‍💻 Author
 [MD. Shameem Ahammed](https://sites.google.com/view/shameem3e)
-Graduate Student, AI & ML Enthusiast
+
+Graduate Student | AI & ML Enthusiast
 
 ---
 
