@@ -1,37 +1,37 @@
-# Multilingual RAG System by Shameem
+# 📚 Multilingual RAG System
 
 This is a lightweight Retrieval-Augmented Generation (RAG) system that supports Bangla and English. It extracts content from PDFs, generates dense embeddings, retrieves relevant chunks, and uses a question-answering model to respond to user queries. Includes an interactive FastAPI endpoint and evaluation module.
-## Setup Guide
-1. Clone this repository:
-   
-   git clone https://github.com/shameem3e/Multilingual-RAG-System-by-Shameem.git
-   
-   cd Multilingual-RAG-System-by-Shameem
 
-2. Create a virtual environment (optional but recommended):
-   
-   python -m venv .venv
-   
-   source .venv/bin/activate  # Linux/macOS
+## ⚙️ Setup Guide
 
-   .venv\Scripts\activate     # Windows
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/shameem3e/Multilingual-RAG-System-by-Shameem.git
+cd Multilingual-RAG-System-by-Shameem
 
+```
+### **2️⃣ Create Virtual Environment(optional but recommended)**
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate     # Windows
 
-3. Install dependencies:
-   
-   pip install -r requirements.txt
+```
+### **3️⃣ Install Requirements**
+```bash
+pip install -r requirements.txt
 
-4. Add your PDF to the data/ directory:
+```
+### **4️⃣  Add your PDF to the data/ directory**
    
    data/
    
    └── hsc26_bangla.pdf
-   
-6. Run the API server:
-
-   uvicorn app.api:app --reload
-
-   Access the interactive UI at http://127.0.0.1:8000/docs
+### **5️⃣ Run the API server**
+```bash
+uvicorn app.api:app --reload
+Access the interactive UI at http://127.0.0.1:8000/docs
+```
 
 ## Tools & Libraries Used
 | Tool / Library            | Purpose                                  |
@@ -64,7 +64,7 @@ Response:
   "answer": "শম্ভুনাথ"
 }
 
-Interactive Swagger UI available at: http://127.0.0.1:8000/docs
+Interactive Swagger UI available at: `http://127.0.0.1:8000/docs`
 
 ## Evaluation Metrics
 | Metric       | Description                                                      |
@@ -74,11 +74,10 @@ Interactive Swagger UI available at: http://127.0.0.1:8000/docs
 
 Example:
 
-Groundedness: 0.91
+* Groundedness: 0.91
+* Relevance: 0.84
 
-Relevance: 0.84
-
-## Reflection Questions
+## ❓ Reflection Questions
 
 Q: What method or library did you use to extract the text, and why? Did you face any formatting challenges with the PDF content?
 
@@ -103,3 +102,21 @@ A: The use of multilingual sentence-level embeddings ensures a consistent vector
 Q: Do the results seem relevant? If not, what might improve them (e.g., better chunking, better embedding model, larger document)?
 
 A: Yes, the results are mostly relevant. However, improvements could include better OCR for low-quality PDFs, refining the chunking to preserve semantic boundaries more carefully, or switching to a stronger embedding model like LaBSE or multilingual-e5.
+
+## 🛠 Tech Stack
+* Python 3.8+
+* Hugging Face Transformers
+* FAISS (Facebook AI Similarity Search)
+
+## 🚀 Future Improvements
+* Add summarization of retrieved results
+* Integrate speech-to-text & text-to-speech
+* Add web interface (Flask/Streamlit)
+
+## 👨‍💻 Author
+[MD. Shameem Ahammed](https://sites.google.com/view/shameem3e)
+Graduate Student, AI & ML Enthusiast
+
+---
+
+If you want, I can also add a **"Preview" section** with a screenshot of your terminal chatbot in action so the GitHub page looks more engaging. Would you like me to make that?
